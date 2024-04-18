@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --fonte-principal:"poppins";
+    --cor-background: #F6F5F2;
+    --cor-principal: #7C9D96;
+    --cor-secundaria: #116A7B;
+}
+
+body {
+    background-color: var(--cor-background);
+    box-sizing: border-box;
+    width: 100vh;
+}
+
+.seloeb {
+    padding: 2% 0% 0% 23%;
+}
+
+.main {
+    padding-left: 25%;
+    width: 100vw;
+    display: flex;
+    border: 10px;
+    justify-items: center;
+    text-align: justify;
+    font-family: var(--fonte-principal);
+}
+
+.conteudo {
+    display: inline-block;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.titulo {
+    margin: 24px 0;
+}
+
+.social__media {
+    display: flex;
+    align-content: center;
+    margin: 8%;
+    justify-content:space-between;
+}
+
+.botao__principal {
+    display: flex;
+    align-content: center;
+    justify-content:center;
+}
+.botao {
+    align-items: center;
+    margin: 5%;
+    width: 200px;
+    height: 40px;
+    justify-content: space-between;
+    border-radius: 5px;
+    display: inline;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid black;
+}
+
+.foto {
+    border-radius: 50%;
+    height: 30%;
+    width: 30%;
+    margin-left: 80px;
+}
+
+.rodape {
+    color: var(#000000);
+    font-family: var(--fonte-principal);
+    font-size: 12px;
+    text-align: center;
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px 0;
+}
+
+@media (max-width: 1200px) {
+    .seloeb {
+        padding: 6%;
+    }
+    
+    .main  {
+        flex-direction: column-reverse;
+        padding: 2%;
+    }
+
+    .conteudo{
+        width: 100vw;
+        padding: 5% 0 0% 0%;
+        text-align:justify;
+    }
+    .titulo {
+        text-align:left;
+        justify-content: center; 
+        font-size:2rem;
+    }
+    .rodape{
+    padding: 10px 0; 
+    justify-content:center;
+    }
+}
